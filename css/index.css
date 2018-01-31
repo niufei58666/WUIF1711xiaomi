@@ -202,6 +202,11 @@ li{
 	position: absolute;
 	left: 0;
 	top: 0;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+.banna-img a.active{
+	opacity: 1;
 }
 .banna-img a img{
 	width: 1226px;
@@ -235,7 +240,7 @@ li{
 	height: 42px;
 	color: #fff;
 }
-.banna-left li:hover{
+.banna-left li.active{
 	background: #ff6700;
 }
 .banner_list{
@@ -282,6 +287,7 @@ li{
 	left:234px;
 	text-align: center;
 	cursor: pointer;
+	z-index: 1;
 }
 .banna-dayu .iconfont,.banna-xiaoyu .iconfont{
 	line-height: 70px;
@@ -311,7 +317,7 @@ li{
 	margin: 0 5px;
 	cursor: pointer;
 }
-.banna-radius li:hover{
+.banna-radius li.active{
 	background:#fff;
 }
 
