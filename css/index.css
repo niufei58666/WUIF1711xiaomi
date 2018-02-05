@@ -128,6 +128,7 @@ li{
 .logo2 a:hover {
 	color: #ff6700;
 }
+
 .logo3{
 	width: 294px;
 	height:100%;
@@ -185,6 +186,66 @@ li{
 }
 .logo-right:hover .icon-sousuokuang:before{
 	color:#fff ;
+}
+.lgcon{
+	width: 100%;
+	height: 0;
+
+	background: #fff;
+	position: absolute;
+	z-index: 2;
+
+    transition: height 1s;
+ }
+.lgcon.active{
+	border-top: 1px solid #ccc;
+    height: 230px;
+	box-shadow: 0 1px 1px 1px #ccc;
+}
+.lgcon li{
+	width: 1226px;
+	height: 100%;
+	margin: 0 auto;
+	position: absolute;
+	left: 62px;
+	top: 0;
+	overflow: hidden;
+	display: none;
+}
+.lgcon li.active{
+	display: block;
+}
+.lgcon li div{
+	width: 204px;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	float: left;
+	padding: 20px 0;
+	box-sizing: content-box;
+}
+.lgcon li div:last-of-type{
+	border: 0;
+}
+.lgcon li div a{
+	width: 100px;
+	height: 100%;
+	background: red;
+}
+.lgcon li div img{
+	width: 100%;
+}
+.lgcon li div p{
+	text-align: center;
+	font-size: 14px;
+	color: #000;
+	margin-top: 10px;
+}
+.lgcon li div span{
+	display: block;
+	text-align: center;
+	font-size: 14px;
+	color: orangered;
+	margin-top: 10px;
 }
 /* logo栏结束 */
 /* banna开始 */
@@ -410,10 +471,20 @@ li{
 	padding-top: 40px;
 	margin: 0 auto;
 	margin-bottom: 40px;
+	overflow: hidden;
 }
+.mxcon{
+	width: 200%;
+	position: relative;
+	left: 0;
+	top: 0;
+ }
 .mx-top1{
 	width: 100%;
 	height: 57px;
+}
+.mx .jdjd1.active{
+	background: orangered;
 }
 .mx-top1 .h2{
 	line-height: 57px;
@@ -422,8 +493,9 @@ li{
 	float: left;
 }
 .mx-top2{
-	width: 100%;
+	width: 50%;
 	height:340px;
+	float: left;
 }
 .mx-top2 .mx1,.mx2,.mx3,.mx4,.mx5{
 	width: 234px;
@@ -486,6 +558,7 @@ li{
 	margin-top: 20px;
     color: #ff6709;
 }
+
 /* 小米明星单品结束 */
 /* 家电开始 */
 .jd{
@@ -784,15 +857,17 @@ li{
 	width: 100%;
 	height: 372px;
 	background: #f5f5f5;
+
 }
 .wn1{
 	width: 1226px;
 	height: 372px;
 	background: #f5f5f5;
 	margin: 0 auto;
+	/*overflow: hidden;*/
 }
 .wn-bottom{
-	width: 1226px;
+	width: 200%;
 	height:314px;
 }
 .wn-list{
@@ -911,152 +986,137 @@ li{
 .rp-bottom{
 	width: 1226px;
 	height:429px;
+	display: flex;
+	justify-content: space-between;
 }
 /* 内容第一个 */
-.nr-list{
+.nrbox1{
 	width: 296px;
-	height:420px;	
+	height:420px;
 	overflow: hidden;
 	float: left;
 	transition: all 0.3s;
 	position: relative;
-}
-.nr-list:hover,.nr-list2:hover{
-	box-shadow: 0px -1px 30px 0.5px rgba(0, 0, 0, 0.2);
-	transform: translateY(-4px);
-}
-/* 内容第二个 */
-.nr-list2{
-	width: 296px;
-	height:420px;
-	float: left;
-	margin-left: 14px;
-	overflow: hidden;
-	transition: all 0.3s;
-	position: relative;	
-}
-.nr-list1{
-	width: 296px;
-	height: 374px;
 	background: #fff;
-	margin-bottom: 14px;
-	padding-top: 45px;
-	float: left;
-	transition: all 0.3s;
-	text-align: center;
-	border-top: 1px solid #ffac13;	
+	color: #FFB836;
+	position: relative;
 }
-.nrnr{
-	width: 888px;
-	height: 420px;
-	background:green;	 
-}
-.nrnr1{
-	width: 1184px;
-	height: 420px;
-	background:green;	 
-}
-.nr{
+.nrbox1 h2{
+	margin: 46px 10px 18px;
 	font-size: 16px;
-	color: #ffac13;
 	font-weight: 400;
-	margin-bottom: 18px;
+	text-align: center;
 }
-.nr-1{
-	font-size: 20px;
-	color: #333;
-}
-.nr-2{
-	display: block;
-	width: 210px;
-	height: 34px;
-	margin: 5px auto 13px;
-	font-size: 12px;
-	line-height: 20px;
-	color: #b0b0b0;
-}
-.nr-3{
-	font-size: 13px;
-	color: #333;
-}
-.nr-4{
-	display: block;
-	margin: 15px 20px 10px;
-	width: 225px;
-	height: 170px;
-}
-.nr-5{
-	width:90px;
-	height: 16px;
-	margin: 0 auto; 
-}
-.nr-5-1{
-	width:120px;
-}
-.nr-5 a{
-	display: block;
-	width:6px;
-	height: 6px;
-	border: 2px solid #fff;
-	background: #b0b0b0; 
-	border-radius: 50%;
-	float: left;
-	margin: 3px 20px 0 0;
-}
-.nr-5 a:hover{
-	border: 2px solid #ff6700;
-	background: #fff; 
-}
-.nr-list22{
-	border-top: 1px solid #83c44e;	
-}
-.nr-list33{
-	border-top: 1px solid #e53935;	
-}
-.nr-list44{
-	border-top: 1px solid #2196f4;	
-}
-.nr-dw1{
-	width: 20px;
-	height: 48px;
-	background: rgba(0, 0, 0, 0.3);
+.nrbox1 li{
+	width: 100%;
+	height: 340px;
 	position: absolute;
-	top: 50%;
+	left: 100%;
+	top: 90px;
+}
+.nrbox1 li.active{
 	left: 0;
-	margin-top: -24px;
+}
+.nrbox1 li h4{
+	font-size: 20px;
+	font-weight: 400;
 	text-align: center;
-	line-height: 48px;
-	color: #fff;
-	opacity: 0;
+	color: #333;
+}
+.nrbox1 li p{
+	margin: 5px 48px 10px;
+	width: 200px;
+	height: 40px;
+	font-size: 12px;
+	color: #ccc;
+	line-height: 20px;
+	text-align: center;
+	overflow: hidden;
+}
+.nrbox1 li span{
+	display: block;
+	height: 21px;
+	color: #333;
+	margin: 0 10px 15px;
+	font-size: 14px;
+	text-align: center;
+}
+.nrbox1 li a{
+	display: block;
+	width: 216px;
+	height: 154px;
+	margin: 0 auto;
+	text-align: center;
+	padding-right: 10px;
+}
+.nrbox1 li a img{
+	width: 100%;
+}
+.circles{
+	width: 100px;
+	height: 12px;
+	position: absolute;
+	left: 50%;
+	bottom: 20px;
+	margin-left: -50px;
+	display: flex;
+	justify-content: space-around;
+}
+.circles a{
+	width: 10px;
+	height: 10px;
+	background: #ccc;
+	border-radius: 50%;
 	cursor: pointer;
 }
-.nr-dw2{
+.circles a.active{
+	background: orangered;
+}
+.nrbox1 .left,.nrbox1 .right{
 	width: 20px;
 	height: 48px;
-	background: rgba(0, 0, 0, 0.3);
-	position: absolute;
-	top: 50%;
-	right: 0;
-	margin-top: -24px;
+	color: #fff;
+	background: #fff;
+	font-size: 24px;
+	font-family: '宋体';
 	text-align: center;
 	line-height: 48px;
-	color: #fff;
-	opacity: 0;
+	position: absolute;
+	top: 50%;
+	margin-top: -24px;
 	cursor: pointer;
 }
-.nr-list:hover .nr-dw1,.nr-list:hover .nr-dw2{
-	opacity: 1;
-	transition: all 1s;
+.nrbox1 .left{
+	left: 0;
 }
-.nr-list2:hover .nr-dw1,.nr-list2:hover .nr-dw2{
-	opacity: 1;
-	transition: all 1s;
+.nrbox1 .right{
+	right: 0;
 }
-.nr-list:hover .nr-dw1:hover,.nr-list:hover .nr-dw2:hover{
-	background: rgba(0, 0, 0, 0.7);
+.nrbox1 .left:hover{
+	animation: se 1s;
 }
-.nr-list2:hover .nr-dw1:hover,.nr-list2:hover .nr-dw2:hover{
-	background: rgba(0, 0, 0, 0.7);
+.nrbox1 .left.active{
+	background: rgba(0,0,0,.5);
+}
+.nrbox1:hover .left{
+	background: #E4E4E4;
+}
+.nrbox1:hover .right{
+	background: #E4E4E4;
+}
+.nrbox1 .right:hover{
+	animation: se 1s;
+}
+.nrbox1 .right.active{
+	background: rgba(0,0,0,.5);
+}
+@keyframes se {
+	from{
+		background: #fff;
+	}
+	to{
+		background: rgba(0,0,0,.5);
+	}
 }
 /* 内容结束 */
 /* 视频开始 */
